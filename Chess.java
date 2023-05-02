@@ -36,7 +36,7 @@ public class Chess {
 
         System.out.println(selected.rankSelect + " " + selected.fileSelect);
 
-        if (Game.selectionValidation(selected, move) == true) {
+        if (Game.selectionValidation(selected, move)) {
 
             System.out.printf("Enter Place to move to(e.i a1,b2,..):");
 
