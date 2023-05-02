@@ -15,9 +15,7 @@ public class Player {
         System.out.printf("Select Piece to move(e.i a1,b2,..):");
         char[] input1 = input();
 
-        Selected selected = new Selected(input1[0], Character.getNumericValue(input1[1]));
-
-        return selected;
+        return new Selected(input1[0], Character.getNumericValue(input1[1]));
     }
 
     public char[] input(){
@@ -25,16 +23,14 @@ public class Player {
         Scanner scanner = new Scanner(System.in);
         input = scanner.next();
         input = input.toUpperCase();
-        char[] input1 = input.toCharArray();
-        return input1;
+        
+        return input.toCharArray();
     }
 
     public Moving movePiece(){
         System.out.printf("Enter Place to move to(e.i a1,b2,..):");
         char[] input1 = input();
-
-        Moving moving = new Moving(input1[0], Character.getNumericValue(input1[1]));
-        return moving;
+        return new Moving(input1[0], Character.getNumericValue(input1[1]));
     }
 
 }
