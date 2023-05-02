@@ -40,6 +40,60 @@ public class ChessBoard {
             System.out.println();
         }
 
-
     }
+
+    public boolean selectionValidation(Selected selected, int move) {
+        if (move % 2 == 1) {
+            if (board[selected.fileSelect][selected.rankSelect].colour == Colour.WHITE) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            if (board[selected.fileSelect][selected.rankSelect].colour == Colour.BLACK) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+    public boolean moveValidationAndMove(Selected selected, Moving moving) {
+        boolean flag;
+
+        flag = board[selected.fileSelect][selected.rankSelect].MovementValidation(selected, moving, validMoves(board[selected.fileSelect][selected.rankSelect].colour), board);
+
+        if (flag == true) {
+            movement(selected, moving);
+            return true;
+        }
+        return false;
+    }
+
+    public Moving[] validMoves(Colour colour) {
+        Moving[] list = new Moving[48];
+        int p = 0;
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                try {
+                    if (board[i][j].colour != colour) {
+                        list[p] = new Moving(j, i);
+                        p++;
+                    }
+                } catch (NullPointerException exception) {
+                    list[p] = new Moving(j, i);
+                    p++;
+                }
+
+            }
+        }
+        return list;
+    }
+
+    void movement(Selected selected, Moving moving) {
+        board[moving.fileMove][moving.rankMove] = board[selected.fileSelect][selected.rankSelect];
+        board[selected.fileSelect][selected.rankSelect] = null;
+    }
+
+
 }
