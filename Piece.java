@@ -6,7 +6,6 @@ abstract public class Piece {
         this.colour = colour;
     }
 
-    abstract public boolean Movement();
 
-    abstract public boolean Validation();
+    public abstract boolean MovementValidation(Selected selected, Moving moving, Moving[] list, Piece board[][]);
 }
