@@ -63,7 +63,7 @@ public class ChessBoard {
 
         flag = board[selected.fileSelect][selected.rankSelect].MovementValidation(selected, moving, validMoves(board[selected.fileSelect][selected.rankSelect].colour), board);
 
-        if (flag == true) {
+        if (flag) {
             movement(selected, moving);
             return true;
         }
