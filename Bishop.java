@@ -32,7 +32,7 @@ public class Bishop extends Piece {
                 }
                 i--;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -47,7 +47,7 @@ public class Bishop extends Piece {
                 }
                 i++;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -62,7 +62,7 @@ public class Bishop extends Piece {
                 }
                 i++;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -77,7 +77,7 @@ public class Bishop extends Piece {
                 }
                 i--;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
