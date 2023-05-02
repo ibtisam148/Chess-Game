@@ -32,7 +32,7 @@ public class Queen extends Piece {
                 }
                 i--;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -47,7 +47,7 @@ public class Queen extends Piece {
                 }
                 i++;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -62,7 +62,7 @@ public class Queen extends Piece {
                 }
                 i++;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -77,7 +77,7 @@ public class Queen extends Piece {
                 }
                 i--;
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -90,7 +90,7 @@ public class Queen extends Piece {
                     flag = true;
                 }
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -103,7 +103,7 @@ public class Queen extends Piece {
                     flag = true;
                 }
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -116,7 +116,7 @@ public class Queen extends Piece {
                     flag = true;
                 }
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
@@ -129,7 +129,7 @@ public class Queen extends Piece {
                     flag = true;
                 }
             }
-            if (flag == false) {
+            if (!flag) {
                 return true;
             } else {
                 System.out.print("Invalid move.\n");
