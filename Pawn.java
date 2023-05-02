@@ -27,7 +27,7 @@ public class Pawn extends Piece {
         }
 
         if (colour == Colour.BLACK) {
-            if (firstMove == true) {
+            if (firstMove) {
                 if ((moving.fileMove == selected.fileSelect + 1 && moving.rankMove == selected.rankSelect) && (board[moving.fileMove][moving.rankMove] == null)) {
                     firstMove = false;
                     return true;
@@ -66,7 +66,7 @@ public class Pawn extends Piece {
                 }
             }
         } else {
-            if (firstMove == true) {
+            if (firstMove) {
                 if ((moving.fileMove == selected.fileSelect - 1 && moving.rankMove == selected.rankSelect) && (board[moving.fileMove][moving.rankMove] == null)) {
                     firstMove = false;
                     return true;
