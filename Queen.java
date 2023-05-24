@@ -1,3 +1,8 @@
+/*
+This class represents the Queen piece in a chess game. This class contains funtion implementations that are related to Queen only.
+As this is a type of object it can be created as piece object.
+This contains funtion that checkes whether the piece can move or not in selected position.
+*/
 public class Queen extends Piece {
     public Queen(Colour colour) {
         super(colour);
@@ -8,7 +13,7 @@ public class Queen extends Piece {
             name = 'q';
         }
     }
-
+//This functions validated whether the selected position can be accessed by this piece or not. This checks vertical, horzontal and diagonal directions.
     @Override
     public boolean MovementValidation(Selected selected, Moving moving, Moving[] list, Piece[][] board) {
         boolean flag = false;
