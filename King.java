@@ -1,3 +1,8 @@
+/*
+This class represents the king piece in a chess game. This class contains funtion implementations that are related to king only.
+As this is a type of object it can be created as piece object.
+This contains funtion that checkes whether the piece can move or not in selected position.
+*/
 public class King extends Piece {
     public King(Colour colour) {
         super(colour);
@@ -9,7 +14,7 @@ public class King extends Piece {
         }
     }
 
-
+//The function to check the movement of the piece and also check whether the is obstructed or not.
     @Override
     public boolean MovementValidation(Selected selected, Moving moving, Moving[] list, Piece board[][]) {
 
