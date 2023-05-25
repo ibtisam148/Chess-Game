@@ -1,3 +1,9 @@
+/*
+This class represents class named "Rook" that extends the "Piece" class. 
+It represents a rook piece in a chess game.The constructor of the "Rook" 
+class takes a parameter called "colour" to determine the color of the rook 
+either white or black. 
+*/
 public class Rook extends Piece {
     public Rook(Colour colour) {
         super(colour);
@@ -8,7 +14,14 @@ public class Rook extends Piece {
         }
 
     }
-
+    
+/*
+The "MovementValidation" method is an overridden method from the superclass. 
+The method performs validation for the rook's movement. It first checks if
+the specified move is in the list of possible moves. If not, it prints "Invalid 
+move" and returns false, indicating that the move is not valid.
+*/
+    
     @Override
     public boolean MovementValidation(Selected selected, Moving moving, Moving[] list, Piece board[][]) {
         int c, i;
