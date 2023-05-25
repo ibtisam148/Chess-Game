@@ -1,3 +1,8 @@
+/*
+This class represents the "Bishop" piece that extends the "Piece" class in a chess game. 
+The constructor of the "Bishop" class takes a parameter called "colour" to determine the 
+color of the bishop (either white or black).
+*/
 public class Bishop extends Piece {
     public Bishop(Colour colour) {
         super(colour);
@@ -7,7 +12,16 @@ public class Bishop extends Piece {
             name = 'b';
         }
     }
+    
+    
 
+/*
+The "MovementValidation" method is an overridden method from the superclass. 
+The method performs validation for the bishop's movement. It checks if the 
+specified move is in the list of possible moves. If not, it prints "Invalid move"
+and returns false, indicating that the move is not valid.
+*/
+    
     @Override
     public boolean MovementValidation(Selected selected, Moving moving, Moving[] list, Piece[][] board) {
         int c, i;
