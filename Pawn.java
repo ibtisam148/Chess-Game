@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/*
+    This class is related to 
+    pawn piece in the chess game.
+*/
 public class Pawn extends Piece {
     boolean firstMove = true;
 
@@ -110,7 +114,7 @@ public class Pawn extends Piece {
         }
     }
 
-
+    // This function will promote the pawn to possible pieces.
     Piece pawnPromote() {
         int c;
         Scanner scanner = new Scanner(System.in);
