@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/*
+This class is related to the player.
+This is the class in which player input the peices where he/she wants them to move.
+*/
 public class Player {
     int id;
     String name;
@@ -26,7 +29,7 @@ public class Player {
         
         return input.toCharArray();
     }
-
+//In this function we take the input from the player.
     public Moving movePiece(){
         System.out.printf("Enter Place to move to(e.i a1,b2,..):");
         char[] input1 = input();

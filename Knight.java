@@ -1,3 +1,7 @@
+/*
+This class represents the Knight piece. This class contains funtional implementations which are related to Knight.
+As this is a type of object it can be created as piece object.
+*/
 public class Knight extends Piece {
     public Knight(Colour colour) {
         super(colour);
@@ -8,6 +12,7 @@ public class Knight extends Piece {
         }
     }
 
+    //The function checks the movement of the piece and also check whether the is obstructed or not.
     @Override
     public boolean MovementValidation(Selected selected, Moving moving, Moving[] list, Piece board[][]) {
         boolean flag = false;

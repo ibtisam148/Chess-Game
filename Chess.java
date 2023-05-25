@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 /*
-Sample
+   This class will print the chess board on the screen and
+   validate the moves.
 */
 public class Chess {
 
