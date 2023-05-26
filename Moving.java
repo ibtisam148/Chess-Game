@@ -1,6 +1,6 @@
 /*
-This file is related to moving
-the chess pieces
+This file is related to moving the chess pieces.
+It has two attributes rankMove and fileMove, which represent the rank and file of the move.
 */
 public class Moving {
     int rankMove;
