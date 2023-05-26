@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-    This class is related to 
-    pawn piece in the chess game.
+    This class is related to pawn piece in the chess game.
+    The Pawn class is a subclass of the Piece class and represents a pawn in a chess game.
 */
 public class Pawn extends Piece {
     boolean firstMove = true;
